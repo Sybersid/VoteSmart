@@ -4,7 +4,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs'; 
 import CanidateScreen from './Canidates'
-import TopicScreen from './Topics'
 import VoteScreen from './Vote'
 import NewsScreen from './News'
 
@@ -26,14 +25,6 @@ const TabNavigator = createBottomTabNavigator({
       )
     }
   },
-  Topics:  { screen: TopicScreen,
-    navigationOptions: {
-      tabBarLabel: 'Topics',
-      tabBarIcon: ({tintColor}) => (
-        <Icon name="ios-search" color={tintColor} size={24} />
-      )
-    }
-  },
   Vote:  { screen: VoteScreen,
     navigationOptions: {
       tabBarLabel: 'Vote',
@@ -45,7 +36,7 @@ const TabNavigator = createBottomTabNavigator({
   },
 {
   initialRouteName : 'Vote',
-  order: ['Canidates', 'Topics', 'News', 'Vote'],
+  order: ['Canidates', 'News', 'Vote'],
 
   navigationOptions: {
     tabBarVisible: true
