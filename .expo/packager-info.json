@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 19140,
-  "expoServerNgrokUrl": "https://k6-sgm.syborg18.votesmart.exp.direct",
-  "packagerNgrokUrl": "https://packager.k6-sgm.syborg18.votesmart.exp.direct",
-  "ngrokPid": 15776
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": "https://k6-sgm.anonymous.votesmart.exp.direct",
+  "packagerNgrokUrl": "https://packager.k6-sgm.anonymous.votesmart.exp.direct",
+  "ngrokPid": 7908
 }
