@@ -1,6 +1,17 @@
 import React, { Component } from "react";
-import { View, Text, Image, StyleSheet, SafeAreaView, Platform, StatusBar, ScrollView, Dimensions } from 'react-native'
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import { View, Text, Button, StyleSheet, SafeAreaView, Platform, StatusBar, ScrollView, Dimensions } from 'react-native'
+import { Card } from 'react-native-elements'
+import BernieCard from './cards/Bernie'
+import BidenCard from './cards/Biden'
+import WarrenCard from "./cards/Warren";
+import YangCard from "./cards/Yang";
+import HarrisCard from "./cards/Harris";
+import ButtigiegCard from "./cards/Buttigieg";
+import ORourkeCard from "./cards/ORourke";
+import BookerCard from "./cards/Booker";
+import KlobucharCard from "./cards/Klobuchar";
+import CastroCard from "./cards/Castro";
+
 
 const { height, width } = Dimensions.get('window')
   
@@ -29,85 +40,25 @@ class CanidatesScreen extends Component {
   horizontal={true}
   showsHorizontalScrollIndicator={false}>
 
-<Card   
-  title='Bernie Sanders'
-  image={require('../VoteSmart/images/bsanders.jpg')}>
-      <Button
-          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-      title='MORE INFO' />
-</Card>
+<BernieCard/>
 
-<Card
-  title='Joe Biden'
-  image={require('../VoteSmart/images/jbiden.jpeg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<BidenCard/>
 
-<Card
-  title='Elizabeth Warren'
-  image={require('../VoteSmart/images/ewarren.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<WarrenCard/>
 
-<Card
-  title='Andrew Yang'
-  image={require('../VoteSmart/images/ayang.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<YangCard/>
 
-<Card
-  title='Kamala Harris'
-  image={require('../VoteSmart/images/kharris.png')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<HarrisCard/>
 
-<Card
-  title='Pete Buttigieg'
-  image={require('../VoteSmart/images/pbuttigieg.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<ButtigiegCard/>
 
-<Card
-  title="Beto O'Rourke "
-  image={require('../VoteSmart/images/borourke.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<ORourkeCard/>
 
-<Card
-  title='Cory Booker'
-  image={require('../VoteSmart/images/cbooker.jpeg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<BookerCard/>
 
-<Card
-  title='Amy Klobuchar'
-  image={require('../VoteSmart/images/aklobuchar.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<KlobucharCard/>
 
-<Card
-  title='Julian Castro'
-  image={require('../VoteSmart/images/jcastro.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<CastroCard/>
 
 <Card
   title='Tulsi Gabbard'
