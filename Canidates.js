@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Button, StyleSheet, SafeAreaView, Platform, StatusBar, ScrollView, Dimensions } from 'react-native'
 import { Card } from 'react-native-elements'
-import BernieCard from './cards/Bernie'
+import SandersCard from './cards/Sanders'
 import BidenCard from './cards/Biden'
 import WarrenCard from "./cards/Warren";
 import YangCard from "./cards/Yang";
@@ -11,7 +11,13 @@ import ORourkeCard from "./cards/ORourke";
 import BookerCard from "./cards/Booker";
 import KlobucharCard from "./cards/Klobuchar";
 import CastroCard from "./cards/Castro";
-
+import GabbardCard from "./cards/Gabbard";
+import SteyerCard from "./cards/Steyer";
+import TrumpCard from "./cards/Trump";
+import SanfordCard from "./cards/Sanford";
+import WalshCard from "./cards/Walsh";
+import WeldCard from "./cards/Weld";
+import DelafuenteCard from "./cards/Delafuente";
 
 const { height, width } = Dimensions.get('window')
   
@@ -40,78 +46,48 @@ class CanidatesScreen extends Component {
   horizontal={true}
   showsHorizontalScrollIndicator={false}>
 
-<BernieCard/>
-
 <BidenCard/>
+
+<BookerCard/>
+
+<ButtigiegCard/>
+
+<CastroCard/>
+
+<GabbardCard/>
+
+<HarrisCard/>
+
+<KlobucharCard/>
+
+<ORourkeCard/>
+
+<SandersCard/>
+
+<SteyerCard/>
 
 <WarrenCard/>
 
 <YangCard/>
 
-<HarrisCard/>
 
-<ButtigiegCard/>
-
-<ORourkeCard/>
-
-<BookerCard/>
-
-<KlobucharCard/>
-
-<CastroCard/>
-
-<Card
-  title='Tulsi Gabbard'
-  image={require('../VoteSmart/images/tgabbard.jpeg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
-
-<Card
-  title='Tom Steyer'
-  image={require('../VoteSmart/images/tsteyer.jpeg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
 </ScrollView>
     <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 80, color:'red' }}>Republicans</Text>
 <ScrollView
   horizontal={true}
   showsHorizontalScrollIndicator={false}
 >
-<Card
-  title='Donald Trump'
-  image={require('../voteSmart/images/dtrump.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<DelafuenteCard/>
 
-<Card
-  title='Mark Sanford'
-  image={require('../VoteSmart/images/msanford.png')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<SanfordCard/>
 
-<Card
-  title='Joe Walsh'
-  image={require('../VoteSmart/images/jwalsh.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<TrumpCard/>
 
-<Card
-  title='Bill Weld'
-  image={require('../VoteSmart/images/bweld.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
-</Card>
+<WalshCard/>
+
+<WeldCard/>
+
+
 </ScrollView>
 </View>
                 </ScrollView>

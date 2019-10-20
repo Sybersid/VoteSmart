@@ -4,7 +4,7 @@ import { Card } from 'react-native-elements'
 import * as WebBrowser from 'expo-web-browser';
 import Constants from 'expo-constants';
 
-export default class CastroCard extends Component {
+export default class WeldCard extends Component {
   state = {
     result: null,
   };
@@ -12,8 +12,8 @@ export default class CastroCard extends Component {
   render() {
     return (
         <Card   
-        title="Julián Castro"
-        image={require('../images/jcastro.jpg')}>
+        title='Bill Weld'
+        image={require('../images/bweld.jpg')}>
             <Button
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
             title='MORE INFO'
@@ -24,7 +24,7 @@ export default class CastroCard extends Component {
   }
 
   _handlePressButtonAsync = async () => {
-    let result = await WebBrowser.openBrowserAsync('https://www.citizenscount.org/candidate/julian-castro');
+    let result = await WebBrowser.openBrowserAsync('https://www.citizenscount.org/candidate/bill-weld');
     this.setState({ result });
   };
 }
