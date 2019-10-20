@@ -24,22 +24,22 @@ class CanidatesScreen extends Component {
                             <Text style={{ fontSize: 20, fontWeight: '300', paddingHorizontal: 20, color:'red' }}>Make an informed voting decision by learning about each canidates.</Text>
                         </View>
 <View>
-        <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 95, color:'blue' }}> Democrats </Text>
+        <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 95, color:'blue' }}>Democrats</Text>
         <ScrollView
   horizontal={true}
   showsHorizontalScrollIndicator={false}>
 
-<Card
+<Card   
   title='Bernie Sanders'
-  image={require('../voteSmart/images/bsanders.jpg')}>
-  <Button
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='MORE INFO' />
+  image={require('../VoteSmart/images/bsanders.jpg')}>
+      <Button
+          buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+      title='MORE INFO' />
 </Card>
 
 <Card
   title='Joe Biden'
-  image={require('../voteSmart/images/jbiden.jpeg')}>
+  image={require('../VoteSmart/images/jbiden.jpeg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -47,7 +47,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Elizabeth Warren'
-  image={require('../voteSmart/images/ewarren.jpg')}>
+  image={require('../VoteSmart/images/ewarren.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -55,7 +55,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Andrew Yang'
-  image={require('../voteSmart/images/ayang.jpg')}>
+  image={require('../VoteSmart/images/ayang.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -63,7 +63,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Kamala Harris'
-  image={require('../voteSmart/images/kharris.png')}>
+  image={require('../VoteSmart/images/kharris.png')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -71,7 +71,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Pete Buttigieg'
-  image={require('../voteSmart/images/pbuttigieg.jpg')}>
+  image={require('../VoteSmart/images/pbuttigieg.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -79,7 +79,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title="Beto O'Rourke "
-  image={require('../voteSmart/images/borourke.jpg')}>
+  image={require('../VoteSmart/images/borourke.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -87,7 +87,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Cory Booker'
-  image={require('../voteSmart/images/cbooker.jpeg')}>
+  image={require('../VoteSmart/images/cbooker.jpeg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -95,7 +95,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Amy Klobuchar'
-  image={require('../voteSmart/images/aklobuchar.jpg')}>
+  image={require('../VoteSmart/images/aklobuchar.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -103,7 +103,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Julian Castro'
-  image={require('../voteSmart/images/jcastro.jpg')}>
+  image={require('../VoteSmart/images/jcastro.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -111,7 +111,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Tulsi Gabbard'
-  image={require('../voteSmart/images/tgabbard.jpeg')}>
+  image={require('../VoteSmart/images/tgabbard.jpeg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -119,13 +119,13 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Tom Steyer'
-  image={require('../voteSmart/images/tsteyer.jpeg')}>
+  image={require('../VoteSmart/images/tsteyer.jpeg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
 </Card>
 </ScrollView>
-    <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 80, color:'red' }}> Republicans </Text>
+    <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 80, color:'red' }}>Republicans</Text>
 <ScrollView
   horizontal={true}
   showsHorizontalScrollIndicator={false}
@@ -140,7 +140,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Mark Sanford'
-  image={require('../voteSmart/images/msanford.png')}>
+  image={require('../VoteSmart/images/msanford.png')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -148,7 +148,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Joe Walsh'
-  image={require('../voteSmart/images/jwalsh.jpg')}>
+  image={require('../VoteSmart/images/jwalsh.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
@@ -156,7 +156,7 @@ class CanidatesScreen extends Component {
 
 <Card
   title='Bill Weld'
-  image={require('../voteSmart/images/bweld.jpg')}>
+  image={require('../VoteSmart/images/bweld.jpg')}>
   <Button
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='MORE INFO' />
