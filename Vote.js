@@ -31,7 +31,7 @@ class VoteScreen extends Component {
                     >
                         <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 20, justifyContent: "center" }}>
                             <Text style={{ fontSize: 32, fontWeight: '800', paddingHorizontal: 20, color:'blue' }}>
-                                voteUSA
+                                VoteSmart
                             </Text>
                             <Text style={{ fontSize: 20, fontWeight: '300', paddingHorizontal: 20, color:'red' }}>
                                 Informing voters with unbaised and necessary information.</Text>

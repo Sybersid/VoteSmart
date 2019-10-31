@@ -5,16 +5,38 @@ import {
     StyleSheet,
     SafeAreaView,
     TextInput,
+    Button,
     Platform,
     StatusBar,
     ScrollView,
     Image,
     Dimensions
 } from "react-native";
+import { Card, ListItem } from 'react-native-elements'
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import BernieScreen from "./screens/BernieScreen";
 
 const { height, width } = Dimensions.get('window')
 
-class NewsScreen extends Component {
+const users = [
+    {
+       name: 'brynn',
+       avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
+    },
+    
+   ]
+
+export default class NewsScreen extends Component {
+
+    render() {
+        return (
+        <NewsContainer /> 
+       );
+    }
+}
+
+class HomeScreen extends Component {
 
     componentWillMount() {
         this.startHeaderHeight = 80
@@ -37,7 +59,21 @@ class NewsScreen extends Component {
                                 Get the latest news on each canidate.</Text>
                         </View>
                         <View>
-                            
+                            <Card containerStyle={{padding: 0}} >
+                                {
+                                    users.map((u, i) => {
+                                    return (
+                                    <ListItem
+                                    key={i}
+                                    roundAvatar
+                                    title={u.name}
+                                    avatar={{uri:u.avatar}}
+                                /> );
+                            })
+                        }
+                    <Button title="Go to Bernie"
+                             onPress={() => this.props.navigation.push('Bernie')} />
+                    </Card>
                         </View>
                 </ScrollView>
             </SafeAreaView>
@@ -45,7 +81,15 @@ class NewsScreen extends Component {
     }
 }
 
-export default NewsScreen;
+const NewsNavigator = createStackNavigator({
+    News: HomeScreen,
+    Bernie: BernieScreen
+},
+{
+    initialRouteName: 'News'    
+});
+
+const NewsContainer = createAppContainer(NewsNavigator);
 
 const styles = StyleSheet.create({
   container: {
@@ -62,3 +106,4 @@ const styles = StyleSheet.create({
       padding: 15
   }
 });
+
