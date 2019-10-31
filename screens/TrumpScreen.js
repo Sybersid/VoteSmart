@@ -14,7 +14,7 @@ import {
 
 const { height, width } = Dimensions.get('window')
 
-export default class ButtigiegScreen extends Component {
+export default class TrumpScreen extends Component {
 
     componentWillMount() {
         this.startHeaderHeight = 80
@@ -26,7 +26,7 @@ export default class ButtigiegScreen extends Component {
     render() {
         return (
             <SafeAreaView style={{ flex: 1 }}>
-                    <Text>ButtigiegScreen</Text> 
+                    <Text>TrumpScreen</Text> 
             </SafeAreaView>
         );
     }

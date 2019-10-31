@@ -15,11 +15,23 @@ import {
 import { Container, Header, Content, Card, CardItem, Body } from "native-base";
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
-import SandersScreen from "./screens/SandersScreen";
 import BidenScreen from "./screens/BidenScreen";
 import BookerScreen from "./screens/BookerScreen";
 import ButtigiegScreen from "./screens/ButtigiegScreen";
-
+import CastroScreen from "./screens/CastroScreen";
+import GabbardScreen from "./screens/GabbardScreen";
+import HarrisScreen from "./screens/HarrisScreen";
+import KlobucharScreen from "./screens/KlobucharScreen";
+import ORourkeScreen from "./screens/ORourkeScreen";
+import SandersScreen from "./screens/SandersScreen";
+import SteyerScreen from "./screens/SteyerScreen";
+import WarrenScreen from "./screens/WarrenScreen";
+import YangScreen from "./screens/YangScreen";
+import DelafScreen from "./screens/DelafScreen";
+import SanfordScreen from "./screens/SanfordScreen";
+import TrumpScreen from "./screens/TrumpScreen";
+import WalshScreen from "./screens/WalshScreen";
+import WeldScreen from "./screens/WeldScreen";
 
 const { height, width } = Dimensions.get('window')
 
@@ -60,84 +72,84 @@ class HomeScreen extends Component {
             <CardItem header>
               <Text style={styles.democrats}>Democrats</Text>
             </CardItem>
-            <CardItem button onPress={() =>  this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() =>  this.props.navigation.push('Biden')}>
               <Body>
                 <Text>
                   Joe Biden
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Booker')}>
               <Body>
                 <Text>
                   Cory Booker
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Buttigieg')}>
               <Body>
                 <Text>
                   Pete Buttigieg
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Castro')}>
               <Body>
                 <Text>
                   Julián Castro
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Gabbard')}>
               <Body>
                 <Text>
                   Tulsi Gabbard
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Harris')}>
               <Body>
                 <Text>
                   Kamala Harris
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Klobuchar')}>
               <Body>
                 <Text>
                   Amy Klobuchar
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('ORourke')}>
               <Body>
                 <Text>
                   Beto O'Rourke
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Sanders')}>
               <Body>
                 <Text>
                   Bernie Sanders
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Steyer')}>
               <Body>
                 <Text>
                   Tom Steyer
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Warren')}>
               <Body>
                 <Text>
                   Elizabeth Warren
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Yang')}>
               <Body>
                 <Text>
                   Andrew Yang
@@ -153,35 +165,35 @@ class HomeScreen extends Component {
             <CardItem header button onPress={() => alert("This is Card Header")}>
               <Text style={styles.republicans}>Republicans</Text>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Delaf')}>
               <Body>
                 <Text>
                   Rocky De La Fuente
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Sanford')}>
               <Body>
                 <Text>
                   Mark Sanford
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Trump')}>
               <Body>
                 <Text>
                   Donald Trump
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Walsh')}>
               <Body>
                 <Text>
                   Joe Walsh
                 </Text>
               </Body>
             </CardItem>
-            <CardItem button onPress={() => this.props.navigation.push('Bernie')}>
+            <CardItem button onPress={() => this.props.navigation.push('Weld')}>
               <Body>
                 <Text>
                   Bill Weld
