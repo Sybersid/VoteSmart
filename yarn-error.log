@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add native-base --save
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files\git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\RogueKiller;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2018a\runtime\win64;C:\Program Files\MATLAB\R2018a\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;c:\Users\Suresh Sambamurthy\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Suresh Sambamurthy\AppData\Local\Microsoft\WindowsApps;C:\Users\Suresh Sambamurthy\AppData\Local\GitHubDesktop\bin;C:\Users\Suresh Sambamurthy\AppData\Local\Microsoft\WindowsApps;C:\Users\Suresh Sambamurthy\AppData\Local\Yarn\bin;c:\Users\Suresh Sambamurthy\AppData\Local\Android\Sdk\platform-tools;c:\Users\Suresh Sambamurthy\AppData\Local\Android\Sdk\tools;C:\Users\Suresh Sambamurthy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Suresh Sambamurthy\AppData\Roaming\npm
@@ -25,6 +25,7 @@ npm manifest:
     },
     "dependencies": {
       "expo": "^35.0.0",
+      "expo-web-browser": "^7.0.1",
       "native-base": "^2.13.8",
       "react": "16.8.3",
       "react-dom": "16.8.3",
@@ -35,6 +36,7 @@ npm manifest:
       "react-native-reanimated": "~1.2.0",
       "react-native-web": "^0.11.7",
       "react-navigation": "^4.0.10",
+      "react-navigation-stack": "^1.10.3",
       "react-navigation-tabs": "^2.5.5"
     },
     "devDependencies": {
@@ -1887,7 +1889,7 @@ Lockfile:
       "@types/websql" "^0.0.27"
       lodash "^4.17.15"
   
-  expo-web-browser@~7.0.0:
+  expo-web-browser@^7.0.1, expo-web-browser@~7.0.0:
     version "7.0.1"
     resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-7.0.1.tgz#b64ef895b5c0604f312b64b085f7a2f1da630e20"
   
@@ -4056,6 +4058,12 @@ Lockfile:
       xmldoc "^0.4.0"
       yargs "^9.0.0"
   
+  react-navigation-stack@^1.10.3:
+    version "1.10.3"
+    resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-1.10.3.tgz#e714e442b20427f0d2d3c18fce1f9e8cfe69be0b"
+    dependencies:
+      prop-types "^15.7.2"
+  
   react-navigation-tabs@^2.5.5:
     version "2.5.5"
     resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-2.5.5.tgz#f651355b140b35ef5753aac434da5e1943abdd26"
@@ -5039,14 +5047,4 @@ Lockfile:
       yargs-parser "^7.0.0"
 
 Trace: 
-  Error: Missing list of packages to add to your project.
-      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:40587:13)
-      at Generator.next (<anonymous>)
-      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (C:\Program Files (x86)\Yarn\lib\cli.js:23451:28)
-      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:95:12)
-      at Object.run (C:\Program Files (x86)\Yarn\lib\cli.js:40599:19)
-      at run (C:\Program Files (x86)\Yarn\lib\cli.js:89113:20)
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Suresh Sambamurthy\Desktop\react\voteSmart\node_modules\@babel\generator\node_modules\.bin'

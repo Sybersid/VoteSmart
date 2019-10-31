@@ -41,7 +41,7 @@ class CanidatesScreen extends Component {
                             <Text style={{ fontSize: 20, fontWeight: '300', paddingHorizontal: 20, color:'red' }}>Make an informed voting decision by learning about each canidates.</Text>
                         </View>
 <View>
-        <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 95, color:'blue' }}>Democrats</Text>
+        <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 95, paddingVertical: 10, color:'blue' }}>Democrats</Text>
         <ScrollView
   horizontal={true}
   showsHorizontalScrollIndicator={false}>
@@ -72,7 +72,7 @@ class CanidatesScreen extends Component {
 
 
 </ScrollView>
-    <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 80, color:'red' }}>Republicans</Text>
+    <Text style={{ fontSize: 40, fontWeight: '300', paddingHorizontal: 80, paddingVertical: 20, color:'red' }}>Republicans</Text>
 <ScrollView
   horizontal={true}
   showsHorizontalScrollIndicator={false}
