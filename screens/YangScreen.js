@@ -1,49 +1,80 @@
-import React, { Component } from "react";
-import {
-    View,
-    Text,
-    StyleSheet,
-    SafeAreaView,
-    TextInput,
-    Platform,
-    StatusBar,
-    ScrollView,
-    Image,
-    Dimensions
-} from "react-native";
+import React, { Component } from 'react';
+import { Alert, View, ActivityIndicator } from 'react-native';
+import { Container, Content, List, Text } from 'native-base';
 
-const { height, width } = Dimensions.get('window')
+import DataItem from '../components/dataItem';
+import Modal from '../components/modal';
 
-export default class YangScreen extends Component {
+import { getArticles } from '../services/yangNews';
 
-    componentWillMount() {
-        this.startHeaderHeight = 80
-        if (Platform.OS == 'android') {
-            this.startHeaderHeight = 100 + StatusBar.currentHeight
-        }
+export default class ListThumbnailExample extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoading: true,
+      data: null,
+      setModalVisible: false,
+      modalArticleData: {}
     }
-
-    render() {
-        return (
-            <SafeAreaView style={{ flex: 1 }}>
-                    <Text>YangScreen</Text> 
-            </SafeAreaView>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-  container: {
-
-  },
-  header: {
-      paddingRight: 15,
-      paddingLeft: 15
-  },
-  content: {
-      display: "flex",
-      flex: 1,
-      justifyContent: "center",
-      padding: 15
   }
-});
+
+  handleItemDataOnPress = (articleData) => {
+    this.setState({
+      setModalVisible: true,
+      modalArticleData: articleData
+    });
+  }
+
+  handleModalClose = () => {
+    this.setState({
+      setModalVisible: false,
+      modalArticleData: {}
+    });
+  }
+
+  componentDidMount() {
+    getArticles().then(data => {
+      this.setState({
+        isLoading: false,
+        data: data
+      });
+    }, error => {
+      Alert.alert('Error', 'Something went wrong!');
+    }
+    )
+  }
+
+  render() {
+    console.log(this.state.data);
+
+    let view = this.state.isLoading ? (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <ActivityIndicator animating={this.state.isLoading} color="#00f0ff" />
+        <Text style={{marginTop: 10}} children="Please Wait.." />
+      </View>
+    ) : (
+      <List
+        dataArray={this.state.data}
+        renderRow={(item) => {
+            return (
+              <DataItem onPress={this.handleItemDataOnPress} data={item} />
+            )
+        }} />
+    )
+
+    return (
+      <Container>
+        <Content>
+          {view}
+        </Content>
+        <Modal 
+          showModal={this.state.setModalVisible}
+          articleData={this.state.modalArticleData}
+          onClose={this.handleModalClose}
+        />
+      </Container>
+    );
+  }
+}

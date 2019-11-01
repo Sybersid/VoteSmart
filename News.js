@@ -162,7 +162,7 @@ class HomeScreen extends Component {
                 <View>
                 <Content padder>
           <Card>
-            <CardItem header button onPress={() => alert("This is Card Header")}>
+            <CardItem header>
               <Text style={styles.republicans}>Republicans</Text>
             </CardItem>
             <CardItem button onPress={() => this.props.navigation.push('Delaf')}>
